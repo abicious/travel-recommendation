@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TravelBloom</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-content">
+        <h1>Contact Us</h1>
+        <p>Have questions or need assistance planning your trip? Drop us a message!</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Your Email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
